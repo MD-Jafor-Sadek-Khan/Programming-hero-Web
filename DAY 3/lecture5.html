@@ -6,12 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>animation</title>
     <style>
+        .bat
+        {
+           
+            width:400px
+           
+        }
+        .box .bat{
+            transition: transform .1s ease-in;
+        }
+
+        .box .ball
+        {
+            transition: transform .1s ease-out .12s;
+        }
+        .box
+         {
+            border: 1px solid;
+            color: khaki;
+            width: 100%;
+            height: 400px;
+            background-color: #F6F6F6;
+
+
+        }
+
+        .ball
+        {
+            height: 30px;
+            width: 30px;
+            background-color: red;
+            border: 2px dashed black;
+            border-radius: 26px;
+            position: relative;
+            left: 212px;
+            bottom: 60px;
+        }
+        .box:hover .bat
+        {
+            transform: rotate(-45deg);
+        }
+
+        .box:hover .ball
+        {
+            transform: translate(700px, -30px);
+        }
 
     </style>
 </head>
 <body>
     <div class="box">
-        <img src="ass" alt="">
+        <img class="bat" src="assets/img/bat.png" alt="">
+        <div class="ball"></div>
     </div>
 </body>
 </html>
