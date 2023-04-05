@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a668cf3075.js" crossorigin="anonymous"></script>
+    <style>
+        .login-form
+        {
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+        }
+        .login-form input[ type = "submit"]
+        {
+            color: white;
+            background-color: teal;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            border-radius: 5px;
+            border-color: transparent;
+        }
+
+        .login-form input[type="email"]
+        {
+            border-radius: 5px;
+            border: 2px solid ;
+            border-color: teal;
+        }
+        .login-form input[type="password"]
+        {
+            border-radius: 5px;
+            border: 2px solid ;
+            border-color: teal;
+        }
+
+        .login-form-container
+        {
+            display: flex;
+            margin-top: 2em;
+            justify-content: center;
+        }
+
+        .login-form h2
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            color: black;
+
+            
+        }
+
+        .login-form hr
+        {
+            
+            height: 2px;
+            width: 25%;
+            background-color: black;
+            border: 0;
+            border-radius: 5px;
+            position: relative;
+            left: -38%;
+            bottom:4%;
+
+        }
+
+        .login-form input
+        {
+            margin-top: 1em;
+            padding: 1em 4em 1em 1em;
+        }
+
+        i{
+            color: black;
+        }
+        a
+        {
+            color: black;
+            text-decoration: none;
+            padding: 0 1em 0 0 ;
+        }
+
+        header nav
+        {
+            display: flex;
+            justify-content:space-between;
+        }
+
+        
+       
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <a href="">Home</a>
+                <a href="">Dashboard</a>
+                <a href="">Inventory</a>
+            </div>
+           <div>
+            <a href=""><i class="fa-solid fa-user"></i></a>
+            <a href=""><i class="fa-solid fa-right-to-bracket"></i></a>
+           </div>
+        
+        </nav>
+    </header>
+    <div class="login-form-container">
+        <div class="login-form">
+            <h2>Login Form</h2>
+            <hr>
+            <input type="email" placeholder="Enter email">
+            <input type="password" placeholder="Password">
+            <input type="submit" value="Login"></div>
+    </div>
+</body>
+</html>
