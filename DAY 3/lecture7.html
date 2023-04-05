@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+    <style>
+
+        :root
+        {
+            --my-color:teal;
+
+            --my-border: 1px solid rgb(0, 0, 0);
+        }
+        .box
+        {
+            width: 100px;
+            height: 100px;
+            background-color: var(--my-color);
+        }
+
+        #box-3
+        {
+            display: none;
+        }
+
+        #box-2
+        {
+            visibility: hidden;
+        }
+
+
+        .my-h1
+        {
+            color: var(--my-color);
+        }
+        #my-h1-1
+        {
+            border: var(--my-border);
+
+        }
+        #my-h1-2
+        {
+            border-bottom: 1px solid var(--my-color);
+        }
+
+        #my-h1-3
+        {
+            background-color: var(--my-color);
+            color: white;
+            
+        }
+
+        #my-h1-4
+        {
+            text-decoration: dotted var(--my-color);
+        }
+
+
+        .ball
+        {
+            width: 90px;
+            height: 90px;
+            background-color: red;
+
+            border-radius: calc(100% - 70%);
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="box" id="box-1">
+        <h3>my box 1</h3>
+    </div>
+    <div class="box" id="box-2">
+        <h3>my box 2</h3>
+    </div>
+    <div class="box" id="box-3">
+        <h3>my box 3</h3>
+    </div>
+    <div class="box" id="box-4">
+        <h3>my box 4</h3>
+    </div>
+    </section>
+    
+    <section>
+        <h1 class="my-h1" id="my-h1-1">my h1 no 1</h1>
+        <h1 class="my-h1" id="my-h1-2">my h1 no 2</h1>
+        <h1 class="my-h1" id="my-h1-3">my h1 no 3</h1>
+        <h1 class="my-h1" id="my-h1-4">my h1 no 4</h1>
+    </section>
+
+<div class="ball">
+
+</div>
+
+
+</body>
+</html>

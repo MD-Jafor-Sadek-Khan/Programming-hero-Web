@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity of css</title>
+    <style>
+        .h1
+        {
+            color: red;
+
+
+        }
+        #h13
+        {
+            color: blueviolet;
+        }
+        h1
+        {
+            color: aqua;
+            color: black !important;
+        }
+
+        h1
+        {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1" id="h11">my h1 is good</h1>
+    <h1 class="h1" id="h12">my h1 is good</h1>
+    <h1  style=" color:brown;" class="h1" id="h13">my h1 is good</h1>
+    <h1 class="h1" id="h14">my h1 is good</h1>
+</body>
+</html>
