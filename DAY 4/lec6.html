@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive site</title>
+    <style>
+        .container
+        {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .food img
+        {
+            width: 75%;
+            border-radius: 10px;
+        }
+
+        .food
+        {
+            margin: .5em;
+            border: 2px solid khaki;
+            border-radius: 10px;
+            padding: .5em;
+        }
+        .food button
+        {
+            border-radius: 10px;
+            border-color: transparent;
+            background-color: goldenrod;
+            color: white;
+        }
+        button{
+            padding: .3em 1em;
+        }
+
+        @media screen and (max-width:576px) {
+            
+            .container
+            {
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                
+            }
+
+            button
+            {
+                padding: .3em 1em .3em 1em;
+            }
+            
+            
+        }
+
+        @media screen and (min-width:577px) and (max-width:768px)
+        {
+            .container
+            {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+
+            }
+
+            button
+            {
+                padding: .3em 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="food">
+            <img src="img/food.jpg" alt="">
+            <h1>item1</h1>
+            <h3>price: 100</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro odio reprehenderit blanditiis tempore illo commodi aliquam quasi nostrum sunt temporibus.</p>
+            <button type="submit">Buy</button>
+        </div>
+        <div class="food">
+            <img src="img/food.jpg" alt="">
+            <h1>item2</h1>
+            <h3>price: 200</h3>
+            <p>Explicabo maiores, odio quae unde aliquid nostrum tenetur quis pariatur expedita atque quod repudiandae magni adipisci impedit excepturi harum at!</p>
+            <button type="submit">Buy</button>
+        </div>
+        <div class="food">
+            <img src="img/food.jpg" alt="">
+            <h1>item3</h1>
+            <h3>price: 300</h3>
+            <p>Ratione quasi ullam, qui laudantium eum praesentium numquam eveniet voluptatum! Vero rem ab dolorem doloribus dicta ut fuga pariatur debitis.</p>
+            <button type="submit">Buy</button>
+        </div>
+        <div class="food">
+            <img src="img/food.jpg" alt="">
+            <h1>item4</h1>
+            <h3>price: 400</h3>
+            <p>Sit id autem velit accusamus nihil consequatur esse cumque harum doloremque numquam sunt maiores laboriosam, quia accusantium expedita voluptas non!</p>
+            <button type="submit">Buy</button>
+        </div>
+        <div class="food">
+            <img src="img/food.jpg" alt="">
+            <h1>item5</h1>
+            <h3>price: 500</h3>
+            <p>Cupiditate, vel non repellendus ipsa nihil sint, ipsum illo quas deleniti dolore vitae, deserunt maiores aspernatur totam. Eveniet, dolorem non.</p>
+            <button type="submit">Buy</button>
+        </div>
+        <div class="food">
+            <img src="img/food.jpg" alt="">
+            <h1>item6</h1>
+            <h3>price: 600</h3>
+            <p>Laborum ducimus porro, ea aut aperiam nam ad! Laboriosam sunt voluptate accusamus velit commodi repellat hic? Animi, nemo autem. Eum?</p>
+            <button type="submit">Buy</button>
+        </div>
+        <div class="food">
+            <img src="img/food.jpg" alt="">
+            <h1>item7</h1>
+            <h3>price: 700</h3>
+            <p>Ipsa consequuntur aliquid dicta minima ipsam. Mollitia consequatur voluptatibus, sapiente voluptatem, soluta autem praesentium porro eveniet molestias sequi assumenda deleniti.</p>
+            <button type="submit">Buy</button>
+        </div>
+        <div class="food">
+            <img src="img/food.jpg" alt="">
+            <h1>item8</h1>
+            <h3>price: 800</h3>
+            <p>Dolor ullam neque voluptates dolore quasi? Exercitationem blanditiis saepe unde illum reiciendis tempore, cupiditate id at modi minus nobis itaque.</p>
+            <button type="submit">Buy</button>
+        </div>
+    </div>
+</body>
+</html>
