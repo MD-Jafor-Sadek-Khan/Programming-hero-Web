@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive rules</title>
+    <style>
+        body
+        {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid magenta;
+        }
+        .container img{
+            width: 100%;
+        }
+
+        .container-2
+        {
+            display: flex;
+        }
+
+        .container-2 .split
+        {
+            width: 50%;
+        }
+
+        .container-2 .split img
+        {
+            width: 100%;
+        }
+        
+
+        @media screen and (max-width:576px){
+
+            .container-2
+            {
+                display: flex;
+                flex-direction: column;
+
+                
+            }
+           
+            .container-2 .split
+        {
+            width: 100%;
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><img class="split"src="img/tiger.jpg" alt=""></div>
+
+    <h1>split</h1>
+    <div class="container-2">
+        
+        <div class="split"><img src="img/food.jpg" alt=""></div>
+        <div class="split"><img src="img/tiger.jpg" alt=""></div>
+    </div>
+</body>
+</html>
