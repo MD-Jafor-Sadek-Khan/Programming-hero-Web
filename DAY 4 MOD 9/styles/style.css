@@ -36,3 +36,18 @@ img
     grid-template-columns: repeat(2,1fr);
     gap: 5px;
 }
+
+@media screen and (max-width:576px)
+{
+    .container
+    {
+        flex-direction: column;
+    }
+
+    
+
+    .four
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}

@@ -1,0 +1,46 @@
+img
+{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.container
+{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+.container .box
+{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: stretch;
+    gap: 5px;
+
+}
+
+.box3
+
+{   
+    
+    display:flex;
+    flex-direction: column;
+}
+
+.box3 .innerbox
+{
+    height: 200px;
+}
+
+.container > .third
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+
+
+
