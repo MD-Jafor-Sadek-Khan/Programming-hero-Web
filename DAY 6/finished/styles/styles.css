@@ -249,6 +249,15 @@ input{
         background: #FD6E0A;
     }
 
+    nav ul li 
+    {
+        margin-left: 20px;
+    }
+    .banner-first-div
+    {
+        padding-left: 20px;
+    }
+   
 }
 
 
