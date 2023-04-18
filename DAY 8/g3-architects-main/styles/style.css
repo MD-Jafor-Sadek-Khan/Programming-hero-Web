@@ -1,17 +1,28 @@
-/* fonts  */
+/* fonts start */
 
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* font-family: 'Work Sans', sans-serif;  */
 
-/* utilities  */
+/* fonts end  */
+
+
+
+
+/* ------------
+  utilities 
+------------- */
+
+
+
+/* common styles */
 
 * {
   margin: 0;
 }
 .container {
-  background-color: rgba(255, 144, 14, 0.1);
-  padding: 14px 69px 29px 66px;
+  background-color: #ff900e1a;
+  padding: 40px 12% 29px 12%;
 }
 
 .container2
@@ -22,14 +33,33 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+.title
+{
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.description
+{
+  font-weight: 400;
+  font-size: 12px;
+  color: #727272;
+}
+
+
+
+
+
+/* buttons  */
+
 .button {
-  padding: 20px 25px;
+  padding: 14px 19px;
   background-color: #ff900e;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 1px solid transparent;
   color: white;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 13px;
 }
 
 .features-button
@@ -62,18 +92,13 @@ body {
 }
 
 
-.title
-{
-  font-size: 45px;
-  font-weight: 700;
-}
+/* utility ends  */
 
-.description
-{
-  font-weight: 400;
-  font-size: 16px;
-  color: #727272;
-}
+
+
+
+
+
 /* header start  */
 
 /* navigation start  */
@@ -82,23 +107,23 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 70px 7% 70px;
+  
 }
 
-.navbar-title {
-  font-size: 45px;
-  font-weight: 700;
-}
+
 .navbar-menu {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 54px;
 }
 
 .navbar-menu-item {
-  font-size: 18px;
+  color: #424242;
+  font-size: 13px;
   font-weight: 500;
 }
+
+/* navigation ends  */
 
 /* banner start  */
 
@@ -106,20 +131,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 30px;
+  gap: 24px;
+  margin-top: 70px;
 }
 
 .banner-title {
-  font-size: 64px;
+  font-size: 44px;
   font-weight: 700;
   text-align: center;
   width: 60%;
 }
 .banner-description {
   text-align: center;
-  font-weight: 400;
-  font-size: 16px;
-  color: #727272;
   width: 60%;
 }
 .banner-image
@@ -138,7 +161,13 @@ body {
 
 /* banner ends  */
 
-/* main starts  */
+
+
+/* -------------
+    main starts  
+---------------*/
+
+
 
 /* article starts */
 
@@ -180,30 +209,16 @@ body {
     font-size: 45px;
 }
 
-.article-description-title2, .article-description-title3
-{
-    color:rgba(19, 19, 19, 1);
-    font-weight: 500;
-    font-size: 45px;
-}
+
 .article-description-title3
 {
     color: rgba(255, 144, 14, 1);
 }
 
-.article-description-text
-{
-  font-weight: 400;
-  font-size: 16px;
-  color: rgba(114, 114, 114, 1);
-  ;
-}
-
-
-
-
-
 /* article ends */
+
+
+
 
 
 /* features start  */
@@ -230,17 +245,9 @@ body {
   height: 106px;
   background-color:#ff900e;
 }
-.features-title-text
-{
-  font-weight: 700;
-  font-size: 45px;
-}
 
 .features-description
 {
-  font-weight: 400;
-  font-size: 16px;
-  color: #727272;
   margin-top: 24px;
 }
 
@@ -272,17 +279,6 @@ body {
   color: #131313;
 }
 
-.feature-text
-{
-  font-weight: 400;
-  font-size: 16px;
-  color: #727272;
-}
-
-
-
-
-
 .features-image
 {
   width: 50%;
@@ -294,6 +290,9 @@ body {
   height: 100%;
 }
 /* features ends */
+
+
+
 
 
 /* facts starts */
@@ -311,20 +310,6 @@ body {
   flex-direction: column;
   gap: 24px;
   width: 542px;
-}
-
-.facts-title
-{
-  font-weight: 700;
-  font-size: 45px;
-  color: #131313;
-}
-
-.facts-description
-{
-  font-size: 16px;
-  font-weight: 400;
-  color: #727272;
 }
 
 .facts-list
@@ -379,34 +364,70 @@ body {
 
 .sponsors
 {
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 50px;
 }
 
 .sponsors-article
 {
+  width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 25px;
+}
+
+.sponsors-description
+{
+  text-align: center;
 }
 
 .sponsors-icons
 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .sponsor-icon img
 {
-  width: 165px;
-  height: 50px;
+  width: 120px;
+  height: 35px;
+  filter: grayscale();
 }
 
 
 /* sponsor ends */
 
 /* main ends  */
+
+
+/* footer starts  */
+
+.footer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.footer-text
+{
+  padding: 29px 21% 29px 21%;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #424242;
+  background-color: #ff900e1a;
+ 
+}
+
+/* footer ends */
