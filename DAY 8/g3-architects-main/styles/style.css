@@ -17,9 +17,20 @@
 
 /* common styles */
 
-* {
+* 
+{
   margin: 0;
 }
+
+body 
+{
+  font-family: "Work Sans", sans-serif;
+}
+
+
+
+
+
 .container {
   background-color: #ff900e1a;
   padding: 40px 12% 29px 12%;
@@ -29,9 +40,15 @@
 {
     padding: 50px 16.5% 50px 16.5%;
 }
-body {
-  font-family: "Work Sans", sans-serif;
+
+.container3
+{
+  padding: 50px 12% 29px 12%;
 }
+
+
+
+
 
 .title
 {
@@ -44,6 +61,8 @@ body {
   font-weight: 400;
   font-size: 12px;
   color: #727272;
+  line-height: 20px;
+  
 }
 
 
@@ -63,17 +82,16 @@ body {
 }
 
 .features-button
-
 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  bottom: 200px;
+  bottom: 143px;
   background-color: #ff900e;
   color: white;
-  padding: 45px;
+  padding: 32px;
   border: 1px solid transparent;
   border-radius: 5px;
 
@@ -82,13 +100,13 @@ body {
 .features-button-part1
 {
   font-weight: 700;
-  font-size: 65px;
+  font-size: 45px;
 }
 
 .features-button-part2
 {
   font-weight: 500;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 
@@ -182,8 +200,8 @@ body {
 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 1.67%;
-
+    gap: 18px;
+    width: 60%;
     
 
 }
@@ -191,7 +209,7 @@ body {
 .article-images> img
 {
    
-    width: 228px;
+    width: 235px;
     border-radius: 8px;
 }
 
@@ -199,14 +217,16 @@ body {
 {
   display: flex;
   flex-direction: column;
-  gap: 2.2%;
+  justify-content: center;
+  align-items: baseline;
+  gap: 30px;
 }
 
 .article-description-title1
 {
     color:rgba(114, 114, 114, 1);
     font-weight: 500;
-    font-size: 45px;
+    font-size: 32px;
 }
 
 
@@ -214,6 +234,9 @@ body {
 {
     color: rgba(255, 144, 14, 1);
 }
+
+
+
 
 /* article ends */
 
@@ -226,23 +249,31 @@ body {
 .features
 {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
 }
 
 .features-article
 {
-  width: 50%;
+  width: 40%;
 }
 
 .features-title
 {
   display: flex;
   align-items: center;
+  gap: 15px;
+  margin-right: 55px;
 }
+
+
 
 .features-orange-line
 {
-  width: 5px;
-  height: 106px;
+  width: 6px;
+  height: 75px;
+  border-radius: 12px;
   background-color:#ff900e;
 }
 
@@ -255,8 +286,8 @@ body {
 {
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  margin-top: 30px;
+  
+  margin-top: 15px;
   
 }
 
@@ -265,23 +296,23 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 15px 20px 15px 15px ;
-  padding: 15px 20px 15px 15px ;
+  margin: 10px 20px 10px 15px ;
+  padding: 10px 20px 10px 15px ;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
-  gap: 10px;
+  gap: 8px;
 }
 
 .feature-heading
 {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 15px;
   color: #131313;
 }
 
 .features-image
 {
-  width: 50%;
+  width: 48%;
  
 }
 .features-image img
@@ -308,22 +339,23 @@ body {
 {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  width: 542px;
+  gap: 20px;
+  width: 40%;
 }
 
 .facts-list
 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-top: 35px;
 }
 
 .fact
 {
-  padding: 45px 35px;
+  padding: 36px 30px;
   border: 1px solid #ff900e;
-  border-radius: 8px;
-
+  border-radius: 5px;
+  gap: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -333,8 +365,8 @@ body {
 
 .fact-icon
 {
-  height: 45px;
-  width: 45px;
+  height: 32px;
+  width: 32px;
 }
 
 .fact-icon img
@@ -346,14 +378,14 @@ body {
 .fact-rating
 {
   font-weight: 600;
-  font-size: 45px;
+  font-size: 32px;
   color: #424242;
 }
 
 .fact-name
 {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   color: #727272;
 }
 
@@ -369,17 +401,17 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 40px;
 }
 
 .sponsors-article
 {
-  width: 33%;
+  width: 43%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 .sponsors-description
@@ -391,14 +423,14 @@ body {
 {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 
 .sponsor-icon img
 {
-  width: 120px;
-  height: 35px;
+  width: 108px;
+  height: 34px;
   filter: grayscale();
 }
 
@@ -415,15 +447,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
+  margin-bottom: 150px;
+  
 
   
 }
 
 .footer-text
 {
-  padding: 29px 21% 29px 21%;
+  padding: 29px 20% 29px 20%;
   border-radius: 8px;
-  font-size: 20px;
+  font-size: 13px;
   font-weight: 400;
   color: #424242;
   background-color: #ff900e1a;
