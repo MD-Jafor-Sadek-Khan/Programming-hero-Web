@@ -331,6 +331,25 @@ body {
   color: #727272;
 }
 
+/* facts animation starts*/
+
+.fact
+{
+  transition: transform .5s ease-in;
+}
+.fact:hover {
+  transform: scale(1.2);
+  
+  border-color: #ffbc6f;
+  box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.06);
+  
+  
+
+}
+
+
+/* facts animation ends*/
+
 /* facts ends */
 
 /* sponsors start */
