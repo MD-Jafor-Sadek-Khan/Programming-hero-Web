@@ -364,7 +364,7 @@ body {
 .sponsor-icon img {
   width: 108px;
   height: 34px;
-  filter: grayscale();
+  filter: grayscale(100%);
 }
 
 /* sponsor ends */
@@ -506,7 +506,7 @@ body {
   .fact-name,
   .fact-rating,
   .fact-icon img {
-    transition: transform 0.4s ease-in-out, text-shadow 0.5s ease-in-out 0.4s;
+    transition: transform 0.3s ease-in-out, text-shadow 0.2s ease-in-out 0.1s;
     
   }
 
@@ -646,6 +646,11 @@ body {
     transform: scale(1.5);
   }
 
+  .sponsor-icon:hover img
+  {
+    filter: none;
+  }
+
   /* .sponsor-icon animation ends */
 
   /* media query for mobile ends  */
@@ -689,19 +694,21 @@ body {
   /* .facts animation starts*/
 
   .facts-list:hover {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     align-items: center;
-    justify-items: center;
-    overflow: hidden;
+    justify-content:space-around;
   }
 
   .fact:hover {
     transform: scale(1.2) rotate(90deg);
 
-    border-color: #000000;
+    border-color: #af91af;
+    border-right: 0;
+    border-left: 0;
     background-color: #f1efff;
-    box-shadow: 10px -10px 1px #0000000f, inset 8px -10px 1px #0000000f;
+    box-shadow: 10px -10px 10px #d6bed6, 
+    inset 8px -10px 25px #d6bed6,
+    inset -4px 5px 5px #BED6BE;
 
     display: flex;
     flex-direction: row;
@@ -709,8 +716,8 @@ body {
     align-items: center;
 
     gap: 0px;
-    height: 90px;
-    width: 90px;
+    height: 95px;
+    width: 110.5px;
   }
 
   .fact:hover .fact-icon img {
@@ -789,6 +796,11 @@ body {
 
   .sponsor-icon:hover {
     transform: scale(1.5);
+  }
+
+  .sponsor-icon:hover img
+  {
+    filter: none;
   }
 
   /* .sponsor-icon animation ends */
