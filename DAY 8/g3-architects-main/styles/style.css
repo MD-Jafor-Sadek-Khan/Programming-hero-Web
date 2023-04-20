@@ -716,12 +716,33 @@ body {
     align-items: center;
 
     gap: 0px;
-    height: 95px;
-    width: 110.5px;
+    
   }
 
+  .fact1:hover
+  {
+    height: 95px;
+    width: 112.5px;
+  }
+  .fact2:hover
+  {
+    height: 95px;
+    width: 121px;
+  }
+  .fact3:hover
+  {
+    height: 95px;
+    width: 106px;
+  }
+  .fact4:hover
+  {
+    height: 95px;
+    width: 96.1px;
+  }
+
+
   .fact:hover .fact-icon img {
-    width: fit-content;
+    width:max-content;
   }
 
   .fact:hover .fact-name,
