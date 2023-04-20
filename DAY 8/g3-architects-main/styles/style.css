@@ -845,6 +845,8 @@ body {
     transform: scale(1.1) translate(10px, -4px);
     transition: color 0.1s, transform 0.1s ease-in, text-shadow 0.1s ease-in-out,
       box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
+
+    margin-bottom: 2px;
   }
   /* feature button hover ends */
 }
