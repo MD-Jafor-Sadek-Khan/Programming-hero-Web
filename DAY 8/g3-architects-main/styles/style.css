@@ -94,21 +94,6 @@ body {
   transition: margin-right 1s, color 1s;
 }
 
-.features-button:hover {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: 143px;
-  background-color: transparent;
-  color: #fd8a07;
-  padding: 32px;
-  border: 1px solid #f8b160;
-  border-radius: 5px;
-  transition: margin-right 2s, color 1s;
-}
-
 /* utility ends  */
 
 /* header start  */
@@ -262,7 +247,6 @@ body {
   border-radius: 8px;
 
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
-  
 }
 
 .feature-heading {
@@ -304,6 +288,8 @@ body {
   align-items: center;
   gap: 5px;
 
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.06);
+
   padding: 36px 30px;
   border: 1px solid #ff900e;
   border-radius: 5px;
@@ -331,24 +317,12 @@ body {
   color: #727272;
 }
 
-/* facts animation starts*/
-
-.fact
-{
-  transition: transform .5s ease-in;
+.fact-icon,
+.fact-name,
+.fact-rating,
+.fact-icon img {
+  transition: transform 0.3s ease-in-out;
 }
-.fact:hover {
-  transform: scale(1.2);
-  
-  border-color: #ffbc6f;
-  box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.06);
-  
-  
-
-}
-
-
-/* facts animation ends*/
 
 /* facts ends */
 
@@ -379,7 +353,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   width: 100%;
+}
+
+.sponsor-icon {
+  transition: transform 0.2s ease-in-out;
 }
 
 .sponsor-icon img {
@@ -413,11 +392,13 @@ body {
 
 /* footer ends */
 
-/* media query mobile  */
+/* ----------------
+
+  media query mobile 
+
+-------------------*/
 
 @media only screen and (max-width: 576px) {
-
-
   /* common styles  */
   .navbar,
   .article-images,
@@ -444,8 +425,7 @@ body {
   .sponsors-title {
     text-align: center;
   }
-  
-  
+
   .article,
   .features,
   .facts,
@@ -459,27 +439,18 @@ body {
 
   /* common styles ends  */
 
-
-  /*---------------
-     individual styles starts
-  ----------------  */
-  
-
   /* utilities starts */
-
 
   .features-button {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 
     padding: 20px;
     color: white;
     background-color: #ff900e;
-    
-    
+
     border: 1px solid transparent;
     border-radius: 5px;
 
@@ -492,17 +463,19 @@ body {
     font-weight: 700;
     font-size: 32px;
   }
-  
+
   .features-button-part2 {
     font-weight: 500;
     font-size: 13px;
   }
 
-  
+  /* utilities ends  */
 
+  /*------------------
 
+  individual styles starts
 
-/* utilities ends  */
+  ----------------  */
 
   .navbar-menu {
     gap: 10px;
@@ -524,31 +497,45 @@ body {
     gap: 50px;
   }
 
+  .fact {
+    transition: transform 0.4s ease-in-out, box-shadow 0.6s ease-in-out 0.1s;
+  }
+
+  .fact-icon,
+  .fact-name,
+  .fact-rating,
+  .fact-icon img {
+    transition: transform 0.4s ease-in-out, text-shadow 0.5s ease-in-out 0.4s;
+  }
+
   .footer-text {
     text-align: center;
   }
 
+  /* individual style ends  */
 
+  /* hover styles for mobile  */
 
-
-  /* hover styles  */
-
-
-
-  .features-button:hover
-   {
+  .features-button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 
     padding: 20px;
-    color:#ff900e;
+
+    box-shadow: inset 15px 15px 15px #0e7dff, inset -5px -5px 15px #ff900e;
     background-color: white;
+    color: rgb(0, 0, 0);
     
-    
-    border: 1px solid #ff900e;
+
+    text-shadow: 2px 2px 3px #dadada4d, 2px 2px 3px #0000004d;
+
+    transform: scale(1.1) translate(1px, -3px);
+    transition: color 0.1s, transform 0.1s ease-in, text-shadow 0.1s ease-in-out,
+      box-shadow 0.3s ease-in-out, background-color 0.52s ease-in-out;
+
+    border: 1px solid transparent;
     border-radius: 5px;
 
     position: relative;
@@ -556,13 +543,118 @@ body {
     left: 125px;
   }
 
+  /* hover styles ends */
 
-  /* individual styles ends */
+  /* .facts animation starts*/
+
+  .fact:hover {
+    transform: scale(1.1) rotate(90deg);
+
+    border-color: #000000;
+    background-color: #f1efff;
+    box-shadow: inset 10px -10px 5px #0000000f, 10px -10px 1px #0000000f;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 0px;
+    height: 120px;
+    width: 120px;
+
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .fact:hover .fact-icon img {
+    width: fit-content;
+  }
+
+  .fact:hover .fact-name,
+  .fact:hover .fact-rating {
+    white-space: nowrap;
+    color: white;
+
+    text-shadow: 3px 3px 3px #2020204d, -3px -3px 13px #ffffff4d,
+      0 0 1px #585858, -0 -0 1px #585858, 0 -0 1px #585858, -0 0 1px #585858;
+  }
+
+  /* fact 1 start */
+
+  .fact:hover .fact-name1 {
+    transform: rotate(-90deg) translateY(-10px);
+  }
+  .fact:hover .fact-icon1 {
+    transform: rotate(-90deg) translateY(35px);
+  }
+  .fact:hover .fact-rating1 {
+    transform: rotate(-90deg) translateY(35px);
+  }
+
+  /* fact 1 ends  */
+
+  /* fact 2 start */
+
+  .fact:hover .fact-name2 {
+    transform: rotate(-90deg) translateY(-22px);
+  }
+  .fact:hover .fact-icon2 {
+    transform: rotate(-90deg) translateY(57px);
+  }
+  .fact:hover .fact-rating2 {
+    transform: rotate(-90deg) translateY(45px);
+  }
+
+  /* fact 2 ends  */
+
+  /* fact 3 start */
+
+  .fact:hover .fact-name3 {
+    transform: rotate(-90deg) translateY(-18px);
+  }
+  .fact:hover .fact-icon3 {
+    transform: rotate(-90deg) translateY(42px);
+  }
+  .fact:hover .fact-rating3 {
+    transform: rotate(-90deg) translateY(35px);
+  }
+
+  /* fact 3 ends  */
+
+  /* fact 4 start */
+
+  .fact:hover .fact-name4 {
+    transform: rotate(-90deg) translateY(-23px);
+  }
+  .fact:hover .fact-icon4 {
+    transform: rotate(-90deg) translateY(48px);
+  }
+  .fact:hover .fact-rating4 {
+    transform: rotate(-90deg) translateY(25px);
+  }
+
+  /* fact 4 ends  */
+
+  /* facts animation ends*/
+
+  /* .sponsor-icon animation starts  */
+
+  .sponsor-icon:hover {
+    transform: scale(1.5);
+  }
+
+  /* .sponsor-icon animation ends */
+
+  /* media query for mobile ends  */
 }
+/* -----------------------
+  
+  media query for others 
+
+-------------------------*/
 
 @media only screen and (min-width: 577px) {
-
-
   .features-article,
   .facts-article {
     width: 40%;
@@ -580,4 +672,146 @@ body {
   .banner-description {
     width: 60%;
   }
+
+  .fact-icon,
+  .fact-name,
+  .fact-rating,
+  .fact-icon img {
+    transition: transform 0.35s ease-in-out;
+  }
+
+  .fact {
+    transition: transform 0.5s ease-in-out, box-shadow 0.63s ease-in-out;
+  }
+
+  /* .facts animation starts*/
+
+  .facts-list:hover {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+  }
+
+  .fact:hover {
+    transform: scale(1.2) rotate(90deg);
+
+    border-color: #000000;
+    background-color: #f1efff;
+    box-shadow: 10px -10px 1px #0000000f, inset 8px -10px 1px #0000000f;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0px;
+    height: 90px;
+    width: 90px;
+  }
+
+  .fact:hover .fact-icon img {
+    width: fit-content;
+  }
+
+  .fact:hover .fact-name,
+  .fact:hover .fact-rating {
+    white-space: nowrap;
+    color: white;
+
+    text-shadow: 3px 3px 3px rgba(32, 32, 32, 0.3),
+      -3px -3px 13px rgba(255, 255, 255, 0.3), 0 0 1px #585858,
+      -0 -0 1px #585858, 0 -0 1px #585858, -0 0 1px #585858;
+  }
+
+  /* fact 1 start */
+
+  .fact:hover .fact-name1 {
+    transform: rotate(-90deg) translateY(-10px);
+  }
+  .fact:hover .fact-icon1 {
+    transform: rotate(-90deg) translateY(35px);
+  }
+  .fact:hover .fact-rating1 {
+    transform: rotate(-90deg) translateY(35px);
+  }
+
+  /* fact 1 ends  */
+
+  /* fact 2 start */
+
+  .fact:hover .fact-name2 {
+    transform: rotate(-90deg) translateY(-22px);
+  }
+  .fact:hover .fact-icon2 {
+    transform: rotate(-90deg) translateY(57px);
+  }
+  .fact:hover .fact-rating2 {
+    transform: rotate(-90deg) translateY(45px);
+  }
+
+  /* fact 2 ends  */
+
+  /* fact 3 start */
+
+  .fact:hover .fact-name3 {
+    transform: rotate(-90deg) translateY(-18px);
+  }
+  .fact:hover .fact-icon3 {
+    transform: rotate(-90deg) translateY(42px);
+  }
+  .fact:hover .fact-rating3 {
+    transform: rotate(-90deg) translateY(35px);
+  }
+
+  /* fact 3 ends  */
+
+  /* fact 4 start */
+
+  .fact:hover .fact-name4 {
+    transform: rotate(-90deg) translateY(-23px);
+  }
+  .fact:hover .fact-icon4 {
+    transform: rotate(-90deg) translateY(48px);
+  }
+  .fact:hover .fact-rating4 {
+    transform: rotate(-90deg) translateY(25px);
+  }
+
+  /* fact 4 ends  */
+
+  /* facts animation ends*/
+
+  /* .sponsor-icon animation starts  */
+
+  .sponsor-icon:hover {
+    transform: scale(1.5);
+  }
+
+  /* .sponsor-icon animation ends */
+
+  /* feature button hover for other devices start  */
+  .features-button:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 143px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    box-shadow: inset 15px 15px 15px #0e7dff, inset -5px -5px 15px #ff900e;
+
+    text-shadow: 2px 2px 3px #dadada4d, 2px 2px 3px #0000004d;
+    padding: 32px;
+    border: 1px transparent;
+    border-radius: 5px;
+    transform: scale(1.1) translate(10px, -4px);
+    transition: color 0.1s, transform 0.1s ease-in, text-shadow 0.1s ease-in-out,
+      box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  }
+  /* feature button hover ends */
 }
+
+/* media query for others ends  */
