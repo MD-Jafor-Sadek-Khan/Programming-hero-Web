@@ -498,7 +498,8 @@ body {
   }
 
   .fact {
-    transition: transform 0.4s ease-in-out, box-shadow 0.6s ease-in-out 0.1s;
+    transition: transform 0.3s ease-in-out,
+    box-shadow 0.6s ease-in-out;
   }
 
   .fact-icon,
@@ -506,6 +507,7 @@ body {
   .fact-rating,
   .fact-icon img {
     transition: transform 0.4s ease-in-out, text-shadow 0.5s ease-in-out 0.4s;
+    
   }
 
   .footer-text {
@@ -550,7 +552,7 @@ body {
   .fact:hover {
     transform: scale(1.1) rotate(90deg);
 
-    border-color: #000000;
+    border-color: #6779c9;
     background-color: #f1efff;
     box-shadow: inset 10px -10px 5px #0000000f, 10px -10px 1px #0000000f;
 
@@ -568,7 +570,7 @@ body {
   }
 
   .fact:hover .fact-icon img {
-    width: fit-content;
+    width:max-content;
   }
 
   .fact:hover .fact-name,
