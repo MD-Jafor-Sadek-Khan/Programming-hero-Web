@@ -749,7 +749,7 @@ meaningful section ends (customers section mobile)  -------------------------*/
 
   /* customer hover ends */
 
-
+  /* footer hover  */
   .footer-text::before {
     content: "\00A0\00A0\00A0\00A0\00A0\00A0\00A0 Don't Steal My Work!\00A0\00A0\00A0\00A0\00A0";
     color: white;
@@ -772,6 +772,8 @@ meaningful section ends (customers section mobile)  -------------------------*/
     opacity: 1;
     font-size: 20px;
   }
+
+  /* footer hover ends  */
 
   /* .facts animation starts*/
 
@@ -1086,7 +1088,7 @@ meaningful section ends (customers section mobile)  -------------------------*/
   }
   /* feature button hover ends */
 
-/* customers hover animation */
+/* customers hover animation starts */
 
 .customers:hover > *
 {
@@ -1144,7 +1146,11 @@ meaningful section ends (customers section mobile)  -------------------------*/
  */
 
 
-  /* customers hover animation */
+  /* customers hover animation ends*/
+
+
+
+
 
   /* hover ends for other devices  */
 
