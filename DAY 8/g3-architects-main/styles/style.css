@@ -380,7 +380,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 42%;
+  
 }
 
 .customers {
@@ -449,6 +449,7 @@ body {
 {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 3px;
 }
 
@@ -461,7 +462,7 @@ body {
 .customer-rating-vote {
   display: flex;
   align-items: center;
-  gap: 65px;
+  gap: 95px;
   margin-bottom: 20px;
   
 }
@@ -473,7 +474,7 @@ body {
 
 .customer-rating-downvote-count {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   
 }
 
@@ -517,7 +518,7 @@ body {
   background-color: #f9cbff;
   padding: 5px 5px 0px 5px;
   border-radius: 5px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 /* meaningful section ends (customers section)  */
@@ -668,6 +669,37 @@ body {
     text-align: center;
   }
 
+/* ----------------------
+meaningful section starts (customers section mobile)  -------------------------*/
+
+
+.customer-section
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.customer-article
+{
+  justify-content: center;
+  align-items: center;
+}
+
+  .customers
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ----------------------
+meaningful section ends (customers section mobile)  -------------------------*/
+
+
   /* individual style ends  */
 
   /* hover styles for mobile  */
@@ -698,7 +730,48 @@ body {
     left: 125px;
   }
 
-  /* hover styles ends */
+
+
+  
+
+  .customer:hover
+  {
+    transform: scale(1.2);
+    box-shadow: 11px 11px 1px #0000000f;
+    margin: 40px 0;
+    transition: transform .5s ease-in-out,box-shadow .5s ease-in-out , margin .5s ease-in-out;
+    
+
+  }
+
+
+
+
+  /* customer hover ends */
+
+
+  .footer-text::before {
+    content: "\00A0\00A0\00A0\00A0\00A0\00A0\00A0 Don't Steal My Work!\00A0\00A0\00A0\00A0\00A0";
+    color: white;
+    text-shadow: 1px 1px 1px black,
+                 1px -1px 1px black,
+                 -1px 1px 1px black,
+                 -1px -1px 1px black;
+    box-shadow: inset 5px 5px 15px #0072C6,
+                inset 2px 2px 2px #1E90FF;             
+    font-weight: 800;
+    font-size: 0px;
+    /* background-color: white; */
+    background: linear-gradient(to right, #4E80AF, #2D3E50);
+    border-radius: 50px;
+    transition: background-color 1s ease-in-out,
+                opacity 1s ease-in-out,
+                font-size 1s ease-in-out;
+  }
+  .footer-text:hover::before {
+    opacity: 1;
+    font-size: 20px;
+  }
 
   /* .facts animation starts*/
 
@@ -842,6 +915,24 @@ body {
   .fact {
     transition: transform 0.5s ease-in-out, box-shadow 0.63s ease-in-out;
   }
+
+
+  /* customer section start */
+  .customer-article
+  {
+    width: 42%;
+  }
+
+  .customers-section
+  {
+    margin-top: 100px;
+  }
+  /* customer section ends */
+
+
+
+/* hover section for other devices */
+
 
   /* .facts animation starts*/
 
@@ -994,6 +1085,71 @@ body {
     margin-bottom: 2px;
   }
   /* feature button hover ends */
+
+/* customers hover animation */
+
+.customers:hover > *
+{
+  transform: scale(.9);
+  transition: transform .5s ease-in-out;
+}
+
+.customer:hover
+  {
+    transform: scale(1.1) translate(5px, -10px);
+    box-shadow: 11px 11px 1px #0000000f;
+    transition: transform .5s ease-in-out,box-shadow .5s ease-in-out;
+    
+  }
+
+  .customer1:hover
+  {
+    z-index: 1;
+  }
+
+  .customer1:hover + .customer2
+  {
+    transform: translate(-280px);
+    transition: transform .5s ease-in-out;
+    z-index: 0;
+  }
+
+  .customer2:hover
+  {
+    z-index: 0;
+  }
+
+  .customer3:hover
+  {
+    z-index: 1;
+  }
+
+  .customer3:hover + .customer4
+  {
+    transform: translate(-280px);
+    transition: transform .5s ease-in-out;
+    z-index: 0;
+  }
+  .customer4:hover
+  {
+    z-index: 0;
+  }
+
+
+/* .customer1:hover + .customer2
+  {
+    transform: scale(.9) translate(15px,0);
+    transition: transform .5s ease-in-out;
+  }
+ */
+
+
+  /* customers hover animation */
+
+  /* hover ends for other devices  */
+
+
+
 }
 
 /* media query for others ends  */
