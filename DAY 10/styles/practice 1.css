@@ -1,0 +1,51 @@
+.card-img-overlay
+{
+    width: 37% !important;
+    height: 300% !important;
+    position: relative !important;
+    left: 33% !important;
+    top: -3rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 150px !important;
+    border: 5px solid white !important;
+}
+
+.banner
+{
+    border-bottom: 5px solid white;
+}
+
+.card-head
+{
+    height: 30px;
+}
+
+.card
+{
+    box-shadow: 5px 5px 5px #a8a8a8;
+}
+
+i
+{
+    color: rgb(0, 7, 102);
+    
+}
+
+@media screen and (max-width:576px) {
+
+    .card-img-overlay
+{
+    width: 20% !important;
+    height: 300% !important;
+    position: relative !important;
+    left: 40% !important;
+    top: -3rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 150px !important;
+    border: 5px solid white !important;
+}
+    
+}
+
