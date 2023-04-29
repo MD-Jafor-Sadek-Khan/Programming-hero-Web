@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- bs css  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/a668cf3075.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="container">
+    <header>
+      <!-- nav  -->
+      <nav class="navbar navbar-expand-lg bg-white py-5">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">Bike Dekho</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <button class="btn btn-danger" type="submit">Login</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner  -->
+      <div
+        id="carouselExample"
+        class="carousel slide p-5 bg-danger bg-opacity-10 rounded"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div
+                class="col d-flex justify-content-center align-items-start flex-column"
+              >
+                <h1>Ride-on R15 V4 with Smile</h1>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+                <button class="btn btn-danger">Purchase</button>
+              </div>
+              <div class="col">
+                <img src="images/bike-1.png" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div
+                class="col d-flex justify-content-center align-items-start flex-column"
+              >
+                <h1>Ride-on R15 V4 with Smile</h1>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+                <button class="btn btn-danger">Purchase</button>
+              </div>
+              <div class="col">
+                <img src="images/bike-2.png" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div
+                class="col d-flex justify-content-center align-items-start flex-column"
+              >
+                <h1>Ride-on R15 V4 with Smile</h1>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+                <button class="btn btn-danger">Purchase</button>
+              </div>
+              <div class="col">
+                <img src="images/bike-3.png" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+         
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- featured bikes section -->
+
+      <section class="text-center mt-5">
+        <h1>Fetured Bikes In This Year</h1>
+        <p class="text-danger">Best Bike Collection</p>
+        <hr class="w-25 mx-auto">
+
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col"><img class="img-fluid"
+            src="images/feature-bike.jpg" alt=""></div>
+          <div class="col"><img class="img-fluid w-75" src="images/feature-bike.jpg" alt=""></div>
+          <div class="col"><img class="img-fluid" src="images/feature-bike.jpg" alt=""></div>
+        </div>
+      </section>
+
+      <!-- latest news  -->
+      <section>
+        <h1 class="text-center mt-5 mb-5">Latest News</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/bike-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button class="btn btn-danger">Read More</button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/bike-2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a short card. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, cum! Lorem ipsum dolor sit amet consectetur</p>
+                <button class="btn btn-danger">Read More</button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/bike-3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <button class="btn btn-danger">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- clients  -->
+
+      <section>
+        <h1 class="text-center mt-5 mb-3">
+          Happy <span class="text-danger">Clients says</span>
+        </h1>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col text-center">
+            <div class="card h-100">
+              <img src="images/user-1.png" class="card-img-top w-25 mx-auto mt-4" alt="...">
+              <div class="card-body">
+                
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+               <div class="d-flex gap-3 justify-content-center">
+                <i class="fa-star fa-solid "></i>
+                <i class="fa-star fa-solid"></i>
+                <i class="fa-star fa-solid"></i>
+                <i class="fa-star fa-solid"></i>
+                <i class="fa-star fa-solid"></i>
+               </div>
+                <h6 class="text-info pt-2">Micheal Jackson</h6>
+
+              </div>
+              <div class="card-footer border-0 bg-white mt-0 pt-0 fw-bold">
+                <p>Banker</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col text-center">
+            <div class="card h-100">
+              <img src="images/user-2.png" class="card-img-top w-25 mx-auto mt-4" alt="...">
+              <div class="card-body">
+                
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+               <div class="d-flex gap-3 justify-content-center">
+                <i class="fa-star fa-solid "></i>
+                <i class="fa-star fa-solid"></i>
+                <i class="fa-star fa-solid"></i>
+                <i class="fa-star fa-solid"></i>
+                <i class="fa-star fa-solid"></i>
+               </div>
+                <h6 class="text-info pt-2">Micheal Jackson</h6>
+
+              </div>
+              <div class="card-footer border-0 bg-white mt-0 pt-0 fw-bold">
+                <p>Banker</p>
+
+              </div>
+            </div>
+          </div>
+         
+          <div class="col text-center">
+            <div class="card h-100">
+              <img src="images/user-3.png" class="card-img-top w-25 mx-auto mt-4" alt="...">
+              <div class="card-body">
+                
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+               <div class="d-flex gap-3 justify-content-center">
+                <i class="fa-star fa-solid "></i>
+                <i class="fa-star fa-solid"></i>
+                <i class="fa-star fa-solid"></i>
+                <i class="fa-star fa-solid"></i>
+                <i class="fa-star fa-solid"></i>
+               </div>
+                <h6 class="text-info pt-2">Micheal Jackson</h6>
+
+              </div>
+              <div class="card-footer border-0 bg-white mt-0 pt-0 fw-bold">
+                <p>Banker</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- faq  -->
+    <section>
+      <h1 class="text-center mt-5 mb-3">Frequently <span class="text-danger">Asked Questions</span></h1>
+      <div class="row row-cols-1 row-cols-md-2 g-4 p-5 d-flex justify-content-center align-items-center">
+        <div class="col d-flex justify-content-between align-items-center flex-column">
+          <img src="images/faq.png" class="img-fluid w-75" alt="">
+        </div>
+        <div class="col">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- footer  -->
+    <footer class="bg-dark text-white">
+      <div class="row p-5">
+        <div class="col-9">
+          <div class="row-cols-2 d-flex flex-row gap-3">
+            <div class="col-2">
+              <p>Download Now</p>
+            </div>
+            <div class="col-1">
+              <p>License</p>
+            </div>
+          </div>
+          <div class="row-cols-6 d-flex flex-row gap-4">
+            <div class="col-1">
+              <p>About</p>
+            </div>
+            <div class="col-1">
+              <p>Features</p>
+            </div>
+            <div class="col-1">
+              <p>Pricing</p>
+            </div>
+            <div class="col-1">
+              <p>Career</p>
+            </div>
+            <div class="col-1">
+              <p>Help</p>
+            </div>
+            <div class="col-2">
+              <p>Privacy Policy</p>
+            </div>
+            
+            
+          </div>
+          <div class="row-cols-2 d-flex flex-row gap-3">
+            <div class="col-9">
+              <p>© 2020 bike. All rights reserved</p>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-3 d-flex flex-column justify-content-center align-items-center gap-2">
+            <h6 class="text-white">Get The App In</h6>
+          <img src="images/android.png" class="img-fluid w-50" alt="">
+          <img src="images/ios.png" class="img-fluid w-50" alt="">
+        </div>
+      </div>
+    </footer>
+
+    <div class="container d-none">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center">this is the end game</h1>
+          <img src="images/Bike 2.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- bs js  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
